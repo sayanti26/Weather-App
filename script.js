@@ -33,26 +33,26 @@ const getWeather = async(city)=> {
       img.id = 'temp-icon';
       if(respData.weather[0].id>=200 && respData.weather[0].id < 300){
 
-            img.src = "../icons/thunderstorm.png"
+            img.src = "./icons/thunderstorm.png"
       }
       else if(respData.weather[0].id>=300 && respData.weather[0].id < 300){
-            img.src = "../icons/drizzle.png"
+            img.src = "./icons/drizzle.png"
       }
       else if(respData.weather[0].id>=500 && respData.weather[0].id < 600){
             
-            img.src = "../icons/rain.png"
+            img.src = "./icons/rain.png"
       }
       else if(respData.weather[0].id>=600 && respData.weather[0].id < 700){
-            img.src="../icons/snow.png"
+            img.src="./icons/snow.png"
       }
       else if(respData.weather[0].id>=700 && respData.weather[0].id < 800){
-            img.src="../icons/haze.png"
+            img.src="./icons/haze.png"
       }
       else if(respData.weather[0].id == 800){
-            img.src="../icons/sun.png"
+            img.src="./icons/sun.png"
       }
       else if(respData.weather[0].id>800){
-            img.src="../icons/clouds.png"
+            img.src="./icons/clouds.png"
       }
 
       temperature.appendChild(p)
