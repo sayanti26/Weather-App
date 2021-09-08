@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  body::before{
+      content: '';
+      background: url(Images/Sky2.jpg);           /*----#263859------*/
+      height: 100vh;
+      width: 100vw;
+      opacity: 0.2;
+      position: absolute;
+      z-index: -1;
+  }
+  #search-form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #temperature{
+      text-align: center;
+  }
+  #temperature > p{
+      font-size: 2.0rem;
+      font-weight: bold;
+      font-family: sans-serif;
+  }
+  #temp #temp-unit{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.5rem;
+      color: #fff;
+  }
+  #temp #temp-value{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+#climate{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+#location{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#temp-icon{
+    margin: 1rem;
+    width: 40%;
+}
+
+main{
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #6b778d;
+    border-radius: 20px;
+    width: 360px;
+    height: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2);   /*------------------*/
+}
+
+
+#search-btn{
+    color: #494949;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 11px;
+    border: 2px solid #494949;
+    display: inline-block;
+    transition: all 0.4s ease 0s;  
+}
+
+
+#search-btn:hover{
+    color: white;
+    background: #22577A;
+    border-color: #64C9CF;
+    cursor: pointer;
+}
+
+
+#search-input{
+    width: 260px;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px 0;
+    padding: 8px 0;
+    border: 1px solid #00C1D4;
+    border-radius: 5px;
+    color: #000;
+    outline: none;
+    background: none;
+    padding: 0.5rem 1rem;
+}
